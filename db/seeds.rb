@@ -7,6 +7,8 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+Movie.destroy_all
+
 more_movies = [
   {:title => 'Aladdin', :rating => 'G',
     :release_date => '25-Nov-1992'},
